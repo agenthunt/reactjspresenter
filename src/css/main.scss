@@ -1,0 +1,90 @@
+/* Make sure the charset is set appropriately */
+
+@charset "UTF-8";
+@import "icons",
+"transitions",
+"codemirror",
+"syntax";
+ul {
+  list-style: none;
+  height:100%;
+  width:100%;
+  li{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+  }
+}
+
+.transcript {
+  display: none;
+}
+
+.playgroundCode {
+  display: flex;
+  width: 100%;
+  .javascriptCode {
+    width: 45%;
+    border: solid 1px black;
+    position:relative;
+  }
+  .htmlCode {
+    width: 45%;
+    border: solid 1px black;
+    position:relative;
+  }
+  .cssCode {
+    width: 20%;
+    border: solid 1px black;
+    position:relative;
+  }
+}
+
+.playgroundPreview {
+  min-width: 200px;
+  min-height:150px;
+  display:flex;
+  width:90%;
+  justify-content:center;
+  border:solid 1px black;
+}
+
+h1{
+  font-size: 6.8vmin;
+}
+
+.css-logo {
+  background: url('images/css3.png') no-repeat;
+  height: 48px;
+  width: 34px;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  opacity: 0.7;
+}
+
+.html-logo {
+  background: url('images/html5.png') no-repeat;
+  height: 48px;
+  width: 34px;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  opacity: 0.6;
+}
+
+.js-logo {
+  background: url('images/js.png') no-repeat;
+  height: 34px;
+  width: 34px;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  opacity: 0.9;
+}

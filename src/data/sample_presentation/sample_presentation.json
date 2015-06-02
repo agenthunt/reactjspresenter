@@ -1,0 +1,342 @@
+{
+  "name": "Introduction to React",
+  "slides": [{
+    "title": "",
+    "visibleSectionsCount": 2,
+    "sections": [{
+      "type": "text",
+      "content": "Introduction to React",
+      "style": {
+        "fontSize": "6.4vmin"
+      }
+    }, {
+      "type": "image",
+      "style": {
+        "fontSize": "2.4vmin",
+        "width": "40%",
+        "height": "60%"
+      },
+      "url": "data/sample_presentation/images/react.png"
+
+    }]
+  }, {
+    "title": "",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "text",
+      "content": "React is a javascript library for building user interfaces.",
+      "style": {
+        "fontSize": "6.4vmin"
+      }
+    }, {
+      "type": "text",
+      "content": "V or VC in the MVC (Model-View-Controller).",
+      "style": {
+        "fontSize": "6.4vmin"
+      }
+    }]
+  }, {
+    "title": "Who is using React ?",
+    "visibleSectionsCount": 2,
+    "sections": [{
+      "type": "text",
+      "style": {
+        "fontSize": "2.8vmin",
+        "width": "90%"
+      },
+      "content": "6rooms   AddThis   Aha!   AirBnB   Alipay   AnyList   Asana   Atlassian   BBC   Beyondpad   BigRentz   Bloom Perfumery   BoomTown   Brigade   C5/mail   CloudFlare   CMN.com   Codecademy   CustomInk   Dailymatons.com   Debitoor Studio for Accountants   Deezer   Distiller   Dropbox   EMEX   ENCODE - Encyclopedia of DNA Elements (source code)   EveryDollar   EyeEm   Facebook   Factlink   FaithStreet   FeedHop   FiftyThree/Mix   FINN   Flexport   FlightYogurt   Flipboard   Flipkart   GetStack   GitHub - Issue viewer   Glip Mobile   GLSL.io   Guidebook   HackerOne   Hexlet   HipChat   Html2CoffeeReact   ICX   Imgur   Instagram   Instructure   Iodine   Itele   Khan Academy   KISSmetrics   Klarna   Kupibilet   Layer   LeFigaro   LockedOn   Madrone - Software & Analytcs   Maizuo   Meituan   Maxwell Health   Minerva Project   mPATH   Mogujie.Xiaodian   Musixmatch   Netflix   Neighborly   NoRedInk   Orobix   Oyster   PaddleGuru   Palo Alto Software   Patience   Peach   PivotalTracker   Pixate   Planning Center Online   Podio   Posiq   PowerReviews   Prism Skylabs   Quizlet   QuizUp   R7 Esportes - Automobilismo   Rally Software   React.rocks   Recurly   Reddit   Redfin   Remind   RevUP   Rockefeller Center   Rollbar   Room & Board   Rotaville Rota Software   rtbl   Rushmore   Salesforce   Sauspiel   SberBank   SellerCrowd   Sift Science   SmugMug   Sonian   Squarespace   Stampsy   Storehouse   Swipely   Syncano   Talk by Teambition   Taobao   Teradek   The New York Times   The Scribbler   The Zebra   Tilt   Timerepublik   TMdict   Traitify Developer Portal   Trunk Club   TvTag   Uber - Web App, Support, Clients, 15+ internal apps   Uniregistry   University of Cincinnati   Venmo   Verbling   Versal   Vida Digital   Wagon   WhatsApp   Wired   Yahoo   Zendesk   Zvooq   Atom Editor   Avocode   Between for PC   Brackets Editor   Buildicus - A website builder with a concierge service. We build websites for people using our app. Front end completely built using React   Clustter - News Aggregator   ctlmngr (source code)   Diaporama Maker   Kitematic   MobileIron Insight (Google Play, App Store)   Pixate — Mobile Interaction Design Tool   Vivaldi Browser"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "2.8vmin"
+      },
+      "content": "https://github.com/facebook/react/wiki/Sites-Using-React"
+    }]
+  }, {
+    "title": "Problems",
+    "sections": [{
+      "type": "text",
+      "style": {
+        "fontSize": "6.4vmin"
+      },
+      "content": "User Interfaces are getting complex."
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "6.4vmin"
+      },
+      "content": "Hard to reason about the state of application."
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "6.4vmin"
+      },
+      "content": "Hard to figure out how your data is flowing."
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "6.4vmin"
+      },
+      "content": "Performance."
+    }]
+  }, {
+    "title": "",
+    "sections": [{
+      "type": "text",
+      "style": {
+        "fontSize": "6.4vmin"
+      },
+      "content": "State------------------>describe UI"
+    }]
+  }, {
+    "title": "",
+    "sections": [{
+      "type": "text",
+      "style": {
+        "fontSize": "6.4vmin"
+      },
+      "content": "For Every State Change----->re-render whole UI"
+    }]
+  }, {
+    "title": "Hello World in React",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "livecode",
+      "style": {
+        "fontSize": "2.4vmin"
+      },
+      "htmlCode": "<!DOCTYPE html>\n<html>\n<head>\n<title>React JS presentation</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">\n<script src=\"https://fb.me/react-0.13.3.min.js\"></script>\n<script src=\"http://fb.me/JSXTransformer-0.12.0-rc1.js\"></script>\n</head>\n<body>\n<div id=\"preview\"></div>\n<script type=\"text/javascript\" src=\"main.js\"></script>\n</body>\n</html>",
+      "javascriptCode": "var HelloComponent = React.createClass({\n\trender: function() {\n\t\treturn <div>Hello </div>;\n\t}\n});\nReact.render(<HelloComponent/>, document.getElementById('preview'));",
+      "cssCode": ""
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Components are the basic building blocks of React."
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "JSX is a javascript extension similar to xml."
+    }]
+  }, {
+    "title": "",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "image",
+      "style": {
+        "fontSize": "2.4vmin",
+        "width": "80%",
+        "height": "80%"
+      },
+      "url": "data/sample_presentation/images/react_working.png"
+    }]
+  }, {
+    "title": "Hello World in React without JSX",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "livecode",
+      "style": {
+        "fontSize": "2.4vmin"
+      },
+      "htmlCode": "<!DOCTYPE html>\n<html>\n<head>\n<title>React JS presentation</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">\n<script src=\"https://fb.me/react-0.13.3.min.js\"></script>\n<script src=\"http://fb.me/JSXTransformer-0.12.0-rc1.js\"></script>\n</head>\n<body>\n<div id=\"preview\"></div>\n<script type=\"text/javascript\" src=\"main.js\"></script>\n</body>\n</html>",
+      "javascriptCode": "var HelloComponent = React.createClass({\n\trender: function() {\n\t\treturn (React.createElement('div',null,'hello'));\n\t}\n});\nReact.render(React.createElement(HelloComponent), document.getElementById('preview'));"
+    }],
+    "transcript": "If you dont like to use JSX , you can use javascript syntax. But as far as I can there is very few ppl who would prefer this instead of JSX syntax"
+  }, {
+    "title": "Props Example",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "livecode",
+      "style": {
+        "fontSize": "2.4vmin"
+      },
+      "htmlCode": "<!DOCTYPE html>\n<html>\n<head>\n<title>React JS presentation</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">\n<script src=\"https://fb.me/react-0.13.3.min.js\"></script>\n<script src=\"http://fb.me/JSXTransformer-0.12.0-rc1.js\"></script>\n</head>\n<body>\n<div id=\"preview\"></div>\n<script type=\"text/javascript\" src=\"main.js\"></script>\n</body>\n</html>",
+      "javascriptCode": "var HelloComponent = React.createClass({\n\trender: function() {\n\t\treturn <div>Hello </div>;\n\t}\n});\nReact.render(<HelloComponent/>, document.getElementById('preview'));",
+      "cssCode": ""
+    }]
+  }, {
+    "title": "",
+    "sections": [{
+      "type": "twocolumn",
+      "leftContentTitle": "Props",
+      "rightContentTitle": "State",
+      "leftContent": ["Passed from parent", "Immutable"],
+      "rightContent": ["Created within a component", "getInitialState", "this.state to read", "this.setState() to update"]
+    }]
+  }, {
+    "title": "State Example",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "livecode",
+      "style": {
+        "fontSize": "2.4vmin"
+      },
+      "htmlCode": "<!DOCTYPE html>\n<html>\n<head>\n<title>React JS presentation</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">\n<script src=\"https://fb.me/react-0.13.3.min.js\"></script>\n<script src=\"http://fb.me/JSXTransformer-0.12.0-rc1.js\"></script>\n</head>\n<body>\n<div id=\"preview\"></div>\n<script type=\"text/javascript\" src=\"main.js\"></script>\n</body>\n</html>",
+      "javascriptCode": "var HelloComponent = React.createClass({\n    getInitialState:function(){\n    \treturn {\n        \tcount:this.props.count\n        }\n    },\n    onIncrease:function(){\n       this.setState({count: Number(this.state.count) + 1});\n    },\n\trender: function() {\n\t\treturn (\n        <div>\n        Count:{this.state.count}\n        \t<button onClick={this.onIncrease}>increase</button>\n        </div>\n      );\n\t}\n});\nReact.render(<HelloComponent count=\"78\"/>, document.getElementById('preview'));",
+      "cssCode": ""
+    }]
+  }, {
+    "title": "",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "pre",
+      "style": {
+        "fontSize": "2.4vmin",
+        "width": "80%",
+        "height": "80%"
+      },
+      "content": "React.createClass({\n\tpropTypes:{},\n\tgetDefaultProps:function() {},\n\tgetInitialState:function() {},\n\n\tcomponentWillMount:function() {},\n\tcomponentWillUnmount:function() {},\n\tcomponentDidMount:function() {}\n….\n\trender:function() {\n\t\t//pure function, read props and state , return UI\n\t\t//Cannot call setState inside this\n\t}\n});\n"
+    }]
+  }, {
+    "title": "",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "image",
+      "style": {
+        "fontSize": "2.4vmin",
+        "width": "80%",
+        "height": "80%"
+      },
+      "url": "data/sample_presentation/images/data_flow.png"
+    }]
+  }, {
+    "title": "React is powerful",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "image",
+      "style": {
+        "fontSize": "2.4vmin",
+        "width": "80%",
+        "height": "80%"
+      },
+      "url": "data/sample_presentation/images/react_powerful.png"
+    }]
+  }, {
+    "title": "React complementary tools",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Flux"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "react-router"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Immutable"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "superagent, react-ajax"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "react-dnd"
+    }]
+  }, {
+    "title": "Key points of React",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Components"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Virtual DOM"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Unidirectional Data flow"
+    }]
+  }, {
+    "title": "",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Thank you"
+    }, {
+      "type": "text",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "content": "Questions ?"
+    }, {
+      "type": "image",
+      "style": {
+        "fontSize": "2.4vmin",
+        "width": "80%",
+        "height": "80%"
+      },
+      "url": "data/sample_presentation/images/upgrade_angular.png"
+    }]
+  }, {
+    "title": "References",
+    "visibleSectionsCount": 1,
+    "sections": [{
+      "type": "link",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "url": "http://www.reactjs.org"
+    }, {
+      "type": "link",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "url": "http://calendar.perfplanet.com/2013/diff/"
+    }, {
+      "type": "link",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "url": "https://www.youtube.com/watch?v=rI0GQc__0SM"
+    }, {
+      "type": "link",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "url": "https://speakerdeck.com/jamesgpearce/an-introduction-to-react-all-things-open-2014"
+    }, {
+      "type": "link",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "url": "https://www.youtube.com/watch?v=Pd6Ub7Ju2RM"
+    }, {
+      "type": "link",
+      "style": {
+        "fontSize": "5.4vmin"
+      },
+      "url": "https://github.com/joelburget/react-live-editor"
+    }
+
+
+    ]
+  }]
+
+}

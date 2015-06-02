@@ -1,0 +1,57 @@
+.example-enter {
+  opacity: 0.01;
+  transition: opacity .3s ease-in;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+}
+
+.example-leave {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+}
+
+@keyframes rightToCenter {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes centerToLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.slidein-enter {
+  animation-name: rightToCenter;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  left:100%;
+}
+
+.slidein-enter.slidein-enter-active {
+  left:0%;
+}
+
+.slidein-leave {
+  animation-name: centerToLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  left:0%;
+}
+
+.slidein-leave.slidein-leave-active {
+  left:-100%;
+}
